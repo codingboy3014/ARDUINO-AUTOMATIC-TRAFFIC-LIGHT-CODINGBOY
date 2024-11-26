@@ -1,0 +1,16 @@
+Components Required:
+Arduino Uno
+Red LED
+Yellow LED
+Green LED
+3 Resistors (220 Ω or 330 Ω)
+Breadboard
+Jumper wires
+
+
+Circuit Connection:
+Arduino Pin	Component	Resistor	Breadboard Connection
+13PIN   	Red LED (Anode)	220 Ω	Connect to Red LED
+12PIN    	Yellow LED (Anode)	220 Ω	Connect to Yellow LED
+11PIN   	Green LED (Anode)	220 Ω	Connect to Green LED
+GND      	LED Cathodes	None	Common ground
