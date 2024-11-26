@@ -1,0 +1,35 @@
+// Pin assignments
+const int redLed = 13;
+const int yellowLed = 12;
+const int greenLed = 11;
+
+void setup() {
+  // Set LED pins as output
+  pinMode(redLed, OUTPUT);
+  pinMode(yellowLed, OUTPUT);
+  pinMode(greenLed, OUTPUT);
+}
+
+void loop() {
+  // RED light ON
+  digitalWrite(redLed, HIGH);
+  delay(5000); // Stay red for 5 seconds
+  
+  // RED light OFF, YELLOW light ON
+  digitalWrite(redLed, LOW);
+  digitalWrite(yellowLed, HIGH);
+  delay(2000); // Stay yellow for 2 seconds
+  
+  // YELLOW light OFF, GREEN light ON
+  digitalWrite(yellowLed, LOW);
+  digitalWrite(greenLed, HIGH);
+  delay(5000); // Stay green for 5 seconds
+  
+  // GREEN light OFF, YELLOW light ON (for transitioning)
+  digitalWrite(greenLed, LOW);
+  digitalWrite(yellowLed, HIGH);
+  delay(2000); // Stay yellow for 2 seconds
+  
+  // YELLOW light OFF (cycle restarts)
+  digitalWrite(yellowLed, LOW);
+}
